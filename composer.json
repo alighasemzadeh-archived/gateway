@@ -1,0 +1,88 @@
+{
+    "name": "alighasemzadeh/gateway",
+    "description": "A Laravel package for connecting to all Iraninan payment gateways",
+    "license": "MIT",
+    "homepage": "https://github.com/alighasemzadeh/gateway",
+    "support": {
+        "issues": "https://github.com/alighasemzadeh/gateway/issues",
+        "source": "https://github.com/alighasemzadeh/gateway"
+    },
+    "authors": [
+        {
+            "name": "Ali Ghasemzadeh",
+            "email": "alighasemzadeh.dev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/contracts": "~5.4|^6.0|^7.0|^8.0",
+        "illuminate/http": "~5.4|^6.0|^7.0|^8.0",
+        "illuminate/view": "~5.4|^6.0|^7.0|^8.0",
+        "illuminate/support": "~5.4|^6.0|^7.0|^8.0",
+        "illuminate/database": "~5.4|^6.0|^7.0|^8.0",
+        "nesbot/carbon": ">=1.20"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alighasemzadeh\\Gateway\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alighasemzadeh\\Gateway\\GatewayServiceProvider"
+            ],
+            "aliases": {
+                "Gateway": "Alighasemzadeh\\Gateway\\Facades\\Gateway"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "keywords": [
+        "laravel",
+        "iran",
+        "payment",
+        "gateway",
+        "port",
+        "bank",
+        "pay",
+        "mellat",
+        "saman",
+        "parsian",
+        "sadad",
+        "meli",
+        "payline",
+        "zarinpal",
+        "iranian-banks",
+        "persian-banks",
+        "pardakht",
+        "dargah",
+        "shaparak",
+        "poolport",
+        "asan-pardakht",
+        "irankish",
+        "saderat",
+        "mabna",
+        "mabna2",
+        "ipay",
+        "pay-ir",
+        "pardano",
+        "nextpay",
+        "jibit",
+        "sabapay",
+        "bahamta"
+    ]
+}
